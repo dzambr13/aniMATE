@@ -43,4 +43,12 @@ const main = async () => {
       id: ''
     }
   ]
+  await Pics.insertMany(pics)
+  console.log('Pictures incoming')
 }
+const run = async () => {
+  await main()
+  db.close()
+}
+
+run()
