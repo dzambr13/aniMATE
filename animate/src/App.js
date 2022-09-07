@@ -1,5 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles/App.css'
+import Home from './components/Home'
+import { Routes, Route } from 'react-router-dom'
+import Nav from './components/Nav'
+import Pic from './components/Pic'
+import axios from 'axios'
+import { useState, useEffect } from 'react'
+import PicDetails from './components/PicDetails'
+
+const BASE_URL = 'http://localhost:3001/api'
 
 function App() {
   return (
@@ -19,7 +27,7 @@ function App() {
         </a>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
