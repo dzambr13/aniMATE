@@ -6,7 +6,7 @@ import Pic from './components/Pic'
 import axios from 'axios'
 import { useState, useEffect } from 'react'
 import PicDetails from './components/PicDetails'
-import pics from '../../models/pics'
+// import pics from '../../models/pics'
 
 const BASE_URL = 'http://localhost:3001/api'
 
