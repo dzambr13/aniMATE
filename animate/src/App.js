@@ -6,7 +6,6 @@ import Pic from './components/Pic'
 import axios from 'axios'
 import { useState, useEffect } from 'react'
 import PicDetails from './components/PicDetails'
-// import pics from '../../models/pics'
 
 const BASE_URL = 'http://localhost:3001/api'
 
@@ -15,7 +14,7 @@ const App = () => {
   useEffect(() => {
     const getPics = async () => {
       const pic = await axios.get(`${BASE_URL}/pics`)
-      setPictures(pic.data.pics)
+      setPictures(pic.data)
     }
     getPics()
   }, [])
@@ -28,8 +27,8 @@ const App = () => {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/pic" element={<Pic picture={picture} />} />
-          <Route path="/pic/:id" element={<PicDetails />} />
+          <Route path="/pics" element={<Pic picture={picture} />} />
+          <Route path="/pics/:id" element={<PicDetails />} />
         </Routes>
       </main>
     </div>

@@ -6,7 +6,8 @@ const Nav = () => {
         <h4> hi </h4>
         <div>
             <Link to="/">Home</Link>
-            <Link to="/">Profile</Link>
+            <Link to="/pics">Profile</Link>
+            {/* <Link to="/"></Link> */}
         </div>
     </nav>
     )
