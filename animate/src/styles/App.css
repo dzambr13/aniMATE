@@ -11,3 +11,25 @@
   min-height: 2em;
   font-family: 'Georgia';
 }
+
+.login-background {
+  background-color: #6F62A0;
+  width: 225px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  border-radius: 30px;
+  position: relative;
+  bottom: 400px;
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 15px 12px;
+}
+
+body {
+  background-size:cover;
+  /* background: no-repeat; */
+  background-image: url(https://images.alphacoders.com/117/1172307.jpg);
+}
+
+.intro {
+  color: white;
+}
